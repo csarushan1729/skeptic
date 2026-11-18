@@ -1,0 +1,94 @@
+{
+  "rules": {
+    "random/naive": {
+      "null_false_positive_rate": 0.32,
+      "planted_power": 0.84,
+      "false_discovery_proportion": 0.3225806451612903,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 31.0
+    },
+    "random/holdout-peeking": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.76,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 19
+    },
+    "random/holdout": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.52,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 13.0
+    },
+    "random/skeptic": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.36,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 9
+    },
+    "random/skeptic+vault": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.2,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 5
+    },
+    "agent/naive": {
+      "null_false_positive_rate": 0.36,
+      "planted_power": 1.0,
+      "false_discovery_proportion": 0.2647058823529412,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 34.0
+    },
+    "agent/holdout-peeking": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.92,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 23
+    },
+    "agent/holdout": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.8,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 20.0
+    },
+    "agent/skeptic": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.72,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 18
+    },
+    "agent/skeptic+vault": {
+      "null_false_positive_rate": 0.0,
+      "planted_power": 0.56,
+      "false_discovery_proportion": 0.0,
+      "n_null": 25,
+      "n_planted": 25,
+      "discoveries": 14
+    }
+  },
+  "extra": {
+    "null_mean_best_is_sharpe": {
+      "random": 0.9324254165825937,
+      "agent": 0.9396982494906747
+    },
+    "null_mean_true_sharpe_of_winner": -0.07798096692089965,
+    "null_mean_vault_sharpe_of_winner": 0.07823370915798958,
+    "planted_share_of_winners_really_real": 0.96,
+    "n_seeds": 25
+  }
+}

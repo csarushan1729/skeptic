@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skeptic-alpha"
+version = "0.1.0"
+description = "A statistical conscience for AI-driven alpha research: trial ledgers, deflated Sharpe, PBO, SPA, and a sealed vault."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0"]
+keywords = ["quant", "backtest overfitting", "deflated sharpe", "alpha", "llm", "multiple testing"]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40", "openai>=1.0"]
+plots = ["matplotlib>=3.7"]
+dev = ["pytest>=7", "matplotlib>=3.7"]
+
+[project.scripts]
+skeptic = "skeptic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
